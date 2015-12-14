@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'simulator'
+require_relative 'robot'
 
 class RobotTurningTest < MiniTest::Unit::TestCase
 
@@ -20,7 +20,6 @@ class RobotTurningTest < MiniTest::Unit::TestCase
   end
 
   def test_invalid_robot_bearing
-    skip
     assert_raises ArgumentError do
       robot.orient(:crood)
     end
